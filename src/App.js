@@ -45,7 +45,7 @@ const addTask = async (task) => {
   
   
 })
-const data = res.json()
+const data = await res.json()
 setTasks([...tasks, data])
 }
 
